@@ -28,7 +28,7 @@ config:
     
 
 scenarios:
-  - name: "intensivo"
+  - name: "ping"
     flow:
       - get:
-          url: '/intensivo'
+          url: '/ping'
