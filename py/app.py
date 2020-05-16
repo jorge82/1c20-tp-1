@@ -23,7 +23,7 @@ def cpuIntensive():
   timeLimit = time.time() + 5 #five seconds from now
   while(time.time() <= timeLimit):
     pass
-  return "timeout"
+  return "intensivo"
 
 if (__name__ == "__main__"):
   app.run()

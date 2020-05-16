@@ -1,18 +1,28 @@
-version: '2'
+version: '3'
 
 services:
     node:
         build: ./js
         ports: 
             - "4000:8080"    #mapeo el puerto 8080 del contenedor al 4000 del host
-        
+        container_name: node
+
     gunicorn:
         build: ./py
         ports: 
             - "4001:8000"    #mapeo el puerto 8000 del contenedor al 4001 del host
-    
 
+    gunicorn_1:
+        build: ./py
+
+    gunicorn_2:
+        build: ./py
+    
+    gunicorn_3:
+        build: ./py
+        
     nginx:
+        restart: always
         image: nginx:1.17.8
         ports:
             - "5555:80"
@@ -21,7 +31,7 @@ services:
             - ./store/static/files:/static:ro
         links:
             - node
-            - gunicorn
+            - gunicorn         
 
     graphite:
         image: graphiteapp/graphite-statsd:1.1.5-12
@@ -35,9 +45,8 @@ services:
 
     grafana:
         image: grafana/grafana:6.3.3
-        restart: always
         ports:
-            - "80:3000"
+            - "81:3000"
         volumes:
             - "grafana_config:/var/lib/grafana"
 
