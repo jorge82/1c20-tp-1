@@ -31,10 +31,10 @@ config:
       - name: Linear Ramp
         duration: 80
         arrivalRate: 5
-        rampTo: 20
+        rampTo: 50
       - name: High Plain
         duration: 100
-        arrivalRate: 20
+        arrivalRate: 50
       - name: Pause
         pause: 60
       - name: Non-linear Ramp
