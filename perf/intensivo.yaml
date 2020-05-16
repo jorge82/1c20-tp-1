@@ -28,13 +28,13 @@ config:
       - name: Warm Up
         duration: 30
         arrivalRate: 5
-#      - name: Linear Ramp
-#        duration: 80
-#        arrivalRate: 5
-#        rampTo: 20
-#      - name: High Plain
-#        duration: 100
-#        arrivalRate: 20
+      - name: Linear Ramp
+        duration: 80
+        arrivalRate: 5
+        rampTo: 20
+      - name: High Plain
+        duration: 100
+        arrivalRate: 20
       - name: Pause
         pause: 60
       - name: Non-linear Ramp

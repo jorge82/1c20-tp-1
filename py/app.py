@@ -3,6 +3,7 @@ import time
 from flask import Flask
 
 TIMEOUT = 5
+FACTORIAL = 2000
 app = Flask(__name__)
 
 @app.route("/")
@@ -20,9 +21,10 @@ def timeout():
 
 @app.route("/intensivo")
 def cpuIntensive():
+  x = 1
   timeLimit = time.time() + 5 #five seconds from now
-  while(time.time() <= timeLimit):
-    pass
+  for i in range(1, FACTORIAL):
+    x *= i
   return "intensivo"
 
 if (__name__ == "__main__"):
