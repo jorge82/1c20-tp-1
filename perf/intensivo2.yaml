@@ -37,22 +37,19 @@ config:
         arrivalRate: 50
       - name: Pause
         pause: 60
-      - name: Non-linear Ramp
-        duration: 120
-        arrivalCount: 100
-      - name: Non-linear Ramp 2
-        duration: 60
-        arrivalCount: 100
-      - name: Active Pause
+      - name: High Plain 2
         duration: 30
-        arrivalRate: 5
-      - name: Non-linear Ramp 3
+        arrivalRate: 50
+      - name: Pause
+        pause: 60
+      - name: High Plain 3
         duration: 30
-        arrivalCount: 150        
+        arrivalRate: 50
+      - name: Pause
+        pause: 60      
 
 scenarios:
-    - name: "intensivo"
+    - name: "intensivo2"
       flow:
         - get:
             url: '/intensivo'
-  
