@@ -487,9 +487,14 @@
             "selected": false,
             "text": "artillery-gunicorn",
             "value": "artillery-gunicorn"
+          },
+          {
+            "selected": false,
+            "text": "artillery-gunicorn-group",
+            "value": "artillery-gunicorn-group"
           }
         ],
-        "query": "artillery-node, artillery-gunicorn",
+        "query": "artillery-node, artillery-gunicorn, artillery-gunicorn-group",
         "type": "custom"
       },
       {
@@ -504,11 +509,6 @@
         "multi": false,
         "name": "container",
         "options": [
-          {
-            "selected": true,
-            "text": "1c20-tp-1_node",
-            "value": "1c20-tp-1_node"
-          },
           {
             "selected": true,
             "text": "1c20-tp-1_node_1",
@@ -541,13 +541,23 @@
           },
           {
             "selected": false,
-            "text": "1c20-tp-1_gunicorn",
-            "value": "1c20-tp-1_gunicorn"
+            "text": "1c20-tp-1_gunicorn_1",
+            "value": "1c20-tp-1_gunicorn_1"
           },
           {
             "selected": false,
-            "text": "1c20-tp-1_gunicorn_1",
-            "value": "1c20-tp-1_gunicorn_1"
+            "text": "1c20-tp-1_gunicorn_4",
+            "value": "1c20-tp-1_gunicorn_4"
+          },
+          {
+            "selected": false,
+            "text": "1c20-tp-1_gunicorn_5",
+            "value": "1c20-tp-1_gunicorn_5"
+          },
+          {
+            "selected": false,
+            "text": "1c20-tp-1_gunicorn_6",
+            "value": "1c20-tp-1_gunicorn_6"
           },
           {
             "selected": false,
@@ -555,7 +565,7 @@
             "value": "1c20-tp-1_nginx_1"
           }
         ],
-        "query": "1c20-tp-1_gunicorn, 1c20-tp-1_node, 1c20-tp-1_node_1, 1c20-tp-1_node_2, 1c20-tp-1_node_3, 1c20-tp-1_cadvisor_1, 1c20-tp-1_grafana_1, 1c20-tp-1_graphite_1, 1c20-tp-1_gunicorn_1, 1c20-tp-1_nginx_1",
+        "query": "1c20-tp-1_node_1, 1c20-tp-1_node_2, 1c20-tp-1_node_3, 1c20-tp-1_cadvisor_1, 1c20-tp-1_grafana_1, 1c20-tp-1_graphite_1, 1c20-tp-1_gunicorn_1, 1c20-tp-1_gunicorn_4, 1c20-tp-1_gunicorn_5, 1c20-tp-1_gunicorn_6, 1c20-tp-1_nginx_1",
         "type": "custom"
       }
     ]

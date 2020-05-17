@@ -1,24 +1,23 @@
 version: '3'
 
 services:
-    node:
+    node_1:
         build: ./js
         ports: 
             - "4000:8080"    #mapeo el puerto 8080 del contenedor al 4000 del host
-        container_name: node
 
-    gunicorn:
+    gunicorn_1:
         build: ./py
         ports: 
             - "4001:8000"    #mapeo el puerto 8000 del contenedor al 4001 del host
 
-    gunicorn_1:
+    gunicorn_4:
         build: ./py
 
-    gunicorn_2:
+    gunicorn_5:
         build: ./py
     
-    gunicorn_3:
+    gunicorn_6:
         build: ./py
         
     nginx:
@@ -28,10 +27,7 @@ services:
             - "5555:80"
         volumes:
             - ./nginx_reverse_proxy.conf:/etc/nginx/conf.d/default.conf:ro
-            - ./store/static/files:/static:ro
-        links:
-            - node
-            - gunicorn         
+            - ./store/static/files:/static:ro   
 
     graphite:
         image: graphiteapp/graphite-statsd:1.1.5-12
