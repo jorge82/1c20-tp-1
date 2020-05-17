@@ -506,6 +506,11 @@
         "options": [
           {
             "selected": true,
+            "text": "1c20-tp-1_node",
+            "value": "1c20-tp-1_node"
+          },
+          {
+            "selected": true,
             "text": "1c20-tp-1_node_1",
             "value": "1c20-tp-1_node_1"
           },
@@ -536,6 +541,11 @@
           },
           {
             "selected": false,
+            "text": "1c20-tp-1_gunicorn",
+            "value": "1c20-tp-1_gunicorn"
+          },
+          {
+            "selected": false,
             "text": "1c20-tp-1_gunicorn_1",
             "value": "1c20-tp-1_gunicorn_1"
           },
@@ -545,7 +555,7 @@
             "value": "1c20-tp-1_nginx_1"
           }
         ],
-        "query": "1c20-tp-1_node_1, 1c20-tp-1_node_2, 1c20-tp-1_node_3, 1c20-tp-1_cadvisor_1, 1c20-tp-1_grafana_1, 1c20-tp-1_graphite_1, 1c20-tp-1_gunicorn_1, 1c20-tp-1_nginx_1",
+        "query": "1c20-tp-1_gunicorn, 1c20-tp-1_node, 1c20-tp-1_node_1, 1c20-tp-1_node_2, 1c20-tp-1_node_3, 1c20-tp-1_cadvisor_1, 1c20-tp-1_grafana_1, 1c20-tp-1_graphite_1, 1c20-tp-1_gunicorn_1, 1c20-tp-1_nginx_1",
         "type": "custom"
       }
     ]
