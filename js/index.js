@@ -3,7 +3,7 @@ const app= express();
 const path= require('path'); 
 
 const PORT= 8080;
-const TIMEOUT= 5000;
+const TIMEOUT= 500;
 
 
 
