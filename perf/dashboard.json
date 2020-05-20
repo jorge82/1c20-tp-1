@@ -386,15 +386,15 @@
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "alias": "asPercent(stats.gauges.cadvisor.1c20-tp-1_node_1.memory_usage, 1952000000)",
+          "alias": "asPercent(stats.gauges.cadvisor.1c20-tp-1_node_1_1.memory_usage, 1952000000)",
           "yaxis": 1
         },
         {
-          "alias": "stats.gauges.cadvisor.1c20-tp-1_gunicorn_1.rx_errors",
+          "alias": "stats.gauges.cadvisor.1c20-tp-1_gunicorn_1_1.rx_errors",
           "yaxis": 2
         },
         {
-          "alias": "stats.gauges.cadvisor.1c20-tp-1_gunicorn_1.tx_errors",
+          "alias": "stats.gauges.cadvisor.1c20-tp-1_gunicorn_1_1.tx_errors",
           "yaxis": 2
         }
       ],
@@ -500,8 +500,8 @@
       {
         "allValue": null,
         "current": {
-          "text": "1c20-tp-1_node_1",
-          "value": "1c20-tp-1_node_1"
+          "text": "1c20-tp-1_node_1_1",
+          "value": "1c20-tp-1_node_1_1"
         },
         "hide": 0,
         "includeAll": false,
@@ -511,8 +511,8 @@
         "options": [
           {
             "selected": true,
-            "text": "1c20-tp-1_node_1",
-            "value": "1c20-tp-1_node_1"
+            "text": "1c20-tp-1_node_1_1",
+            "value": "1c20-tp-1_node_1_1"
           },
           {
             "selected": false,
@@ -541,23 +541,23 @@
           },
           {
             "selected": false,
-            "text": "1c20-tp-1_gunicorn_1",
-            "value": "1c20-tp-1_gunicorn_1"
+            "text": "1c20-tp-1_gunicorn_1_1",
+            "value": "1c20-tp-1_gunicorn_1_1"
           },
           {
             "selected": false,
-            "text": "1c20-tp-1_gunicorn_4",
-            "value": "1c20-tp-1_gunicorn_4"
+            "text": "1c20-tp-1_gunicorn_4_1",
+            "value": "1c20-tp-1_gunicorn_4_1"
           },
           {
             "selected": false,
-            "text": "1c20-tp-1_gunicorn_5",
-            "value": "1c20-tp-1_gunicorn_5"
+            "text": "1c20-tp-1_gunicorn_5_1",
+            "value": "1c20-tp-1_gunicorn_5_1"
           },
           {
             "selected": false,
-            "text": "1c20-tp-1_gunicorn_6",
-            "value": "1c20-tp-1_gunicorn_6"
+            "text": "1c20-tp-1_gunicorn_6_1",
+            "value": "1c20-tp-1_gunicorn_6_1"
           },
           {
             "selected": false,
@@ -565,7 +565,7 @@
             "value": "1c20-tp-1_nginx_1"
           }
         ],
-        "query": "1c20-tp-1_node_1, 1c20-tp-1_node_2, 1c20-tp-1_node_3, 1c20-tp-1_cadvisor_1, 1c20-tp-1_grafana_1, 1c20-tp-1_graphite_1, 1c20-tp-1_gunicorn_1, 1c20-tp-1_gunicorn_4, 1c20-tp-1_gunicorn_5, 1c20-tp-1_gunicorn_6, 1c20-tp-1_nginx_1",
+        "query": "1c20-tp-1_node_1_1, 1c20-tp-1_node_2, 1c20-tp-1_node_3, 1c20-tp-1_cadvisor_1, 1c20-tp-1_grafana_1, 1c20-tp-1_graphite_1, 1c20-tp-1_gunicorn_1_1, 1c20-tp-1_gunicorn_4_1, 1c20-tp-1_gunicorn_5_1, 1c20-tp-1_gunicorn_6_1, 1c20-tp-1_nginx_1",
         "type": "custom"
       }
     ]
