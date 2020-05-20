@@ -21,10 +21,10 @@ config:
     - name: Ramp
       duration: 30
       arrivalRate: 5
-      rampTo: 30
+      rampTo: 20
     - name: Plain
       duration: 120
-      arrivalRate: 30
+      arrivalRate: 20
     
 
 scenarios:

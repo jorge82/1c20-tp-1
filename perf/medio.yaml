@@ -29,27 +29,30 @@ config:
         duration: 30
         arrivalRate: 5
       - name: Linear Ramp
-        duration: 80
+        duration: 30
         arrivalRate: 5
-        rampTo: 50
-      - name: High Plain
-        duration: 30
-        arrivalRate: 50
+        rampTo: 10
       - name: Pause
-        pause: 60
-      - name: High Plain 2
+        pause: 10
+      - name: Linear Ramp 2
         duration: 30
-        arrivalRate: 50
-      - name: Pause
-        pause: 60
-      - name: High Plain 3
+        arrivalRate: 10
+        rampTo: 20
+      - name: Plane
         duration: 30
-        arrivalRate: 50
-      - name: Pause
-        pause: 60      
+        arrivalRate: 20  
+      - name: Pause 2
+        pause: 15
+      - name: Linear Ramp 3
+        duration: 30
+        arrivalRate: 20
+        rampTo: 30
+      - name: Medium Plane
+        duration: 40
+        arrivalRate: 30    
 
 scenarios:
-    - name: "intensivo2"
+    - name: "Medio"
       flow:
         - get:
             url: '/intensivo'
