@@ -1,0 +1,471 @@
+
+> perf@1.0.0 artillery /Users/mmariotti/Documents/UBA/1c20-tp-1/perf
+> artillery "run" "medio.yaml" "-e" "node"
+
+Started phase 0 (Warm Up), duration: 30s @ 21:00:30(-0300) 2020-05-20
+Report @ 21:00:40(-0300) 2020-05-20
+Elapsed time: 10 seconds
+  Scenarios launched:  49
+  Scenarios completed: 19
+  Requests completed:  19
+  Mean response/sec: 5.02
+  Response time (msec):
+    min: 523.9
+    max: 5996.7
+    median: 3267.6
+    p95: 5846.6
+    p99: 5996.7
+  Codes:
+    200: 19
+
+Report @ 21:00:50(-0300) 2020-05-20
+Elapsed time: 20 seconds
+  Scenarios launched:  50
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 5.01
+  Response time (msec):
+    min: 6295.8
+    max: 11987.8
+    median: 9142.2
+    p95: 11838.1
+    p99: 11987.8
+  Codes:
+    200: 20
+
+Report @ 21:01:00(-0300) 2020-05-20
+Elapsed time: 30 seconds
+  Scenarios launched:  50
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 5.01
+  Response time (msec):
+    min: 12288.2
+    max: 17988.3
+    median: 15129.2
+    p95: 17838.4
+    p99: 17988.3
+  Codes:
+    200: 20
+
+Started phase 1 (Linear Ramp), duration: 30s @ 21:01:00(-0300) 2020-05-20
+Report @ 21:01:10(-0300) 2020-05-20
+Elapsed time: 40 seconds
+  Scenarios launched:  56
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 5.6
+  Response time (msec):
+    min: 18287.5
+    max: 24011.4
+    median: 21131.9
+    p95: 23844.2
+    p99: 24011.4
+  Codes:
+    200: 20
+
+Report @ 21:01:20(-0300) 2020-05-20
+Elapsed time: 50 seconds
+  Scenarios launched:  74
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 7.41
+  Response time (msec):
+    min: 24310.6
+    max: 29999.8
+    median: 27154.9
+    p95: 29850.1
+    p99: 29999.8
+  Codes:
+    200: 20
+
+Report @ 21:01:30(-0300) 2020-05-20
+Elapsed time: 1 minute, 0 seconds
+  Scenarios launched:  93
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 9.3
+  Response time (msec):
+    min: 30299.4
+    max: 35989.4
+    median: 33143.7
+    p95: 35839.5
+    p99: 35989.4
+  Codes:
+    200: 20
+
+Started phase 2 (Pause), duration: undefineds @ 21:01:30(-0300) 2020-05-20
+Report @ 21:01:40(-0300) 2020-05-20
+Elapsed time: 1 minute, 10 seconds
+  Scenarios launched:  6
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 0.6
+  Response time (msec):
+    min: 36288.6
+    max: 42033.3
+    median: 39135.3
+    p95: 41866.1
+    p99: 42033.3
+  Codes:
+    200: 20
+
+Started phase 3 (Linear Ramp 2), duration: 30s @ 21:01:40(-0300) 2020-05-20
+Report @ 21:01:50(-0300) 2020-05-20
+Elapsed time: 1 minute, 20 seconds
+  Scenarios launched:  98
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 10.49
+  Response time (msec):
+    min: 42333
+    max: 48321.2
+    median: 45177.9
+    p95: 48120.8
+    p99: 48321.2
+  Codes:
+    200: 20
+
+Report @ 21:02:00(-0300) 2020-05-20
+Elapsed time: 1 minute, 30 seconds
+  Scenarios launched:  148
+  Scenarios completed: 20
+  Requests completed:  20
+  Mean response/sec: 14.81
+  Response time (msec):
+    min: 48618.2
+    max: 54211
+    median: 51065
+    p95: 54011.2
+    p99: 54211
+  Codes:
+    200: 20
+
+Report @ 21:02:10(-0300) 2020-05-20
+Elapsed time: 1 minute, 40 seconds
+  Scenarios launched:  182
+  Scenarios completed: 27
+  Requests completed:  27
+  Mean response/sec: 18.2
+  Response time (msec):
+    min: 54610.3
+    max: 59935.5
+    median: 59304.6
+    p95: 59935.2
+    p99: 59935.5
+  Codes:
+    200: 15
+    504: 12
+  Errors:
+    ECONNRESET: 89
+
+Started phase 4 (Plane), duration: 30s @ 21:02:10(-0300) 2020-05-20
+Report @ 21:02:20(-0300) 2020-05-20
+Elapsed time: 1 minute, 50 seconds
+  Scenarios launched:  199
+  Scenarios completed: 74
+  Requests completed:  74
+  Mean response/sec: 19.9
+  Response time (msec):
+    min: 59933.3
+    max: 59939.9
+    median: 59934.7
+    p95: 59936.6
+    p99: 59939.4
+  Codes:
+    504: 74
+  Errors:
+    ECONNRESET: 125
+
+Report @ 21:02:30(-0300) 2020-05-20
+Elapsed time: 2 minutes, 0 seconds
+  Scenarios launched:  200
+  Scenarios completed: 13
+  Requests completed:  13
+  Mean response/sec: 20.02
+  Response time (msec):
+    min: 59933.5
+    max: 59936.7
+    median: 59934.6
+    p95: 59936.6
+    p99: 59936.7
+  Codes:
+    504: 13
+  Errors:
+    ECONNRESET: 187
+
+Report @ 21:02:40(-0300) 2020-05-20
+Elapsed time: 2 minutes, 10 seconds
+  Scenarios launched:  200
+  Scenarios completed: 42
+  Requests completed:  42
+  Mean response/sec: 20.02
+  Response time (msec):
+    min: 67008.5
+    max: 75567.1
+    median: 75250.1
+    p95: 75549.9
+    p99: 75567.1
+  Codes:
+    504: 42
+  Errors:
+    ECONNRESET: 158
+
+Started phase 5 (Pause 2), duration: undefineds @ 21:02:40(-0300) 2020-05-20
+Report @ 21:02:50(-0300) 2020-05-20
+Elapsed time: 2 minutes, 20 seconds
+  Scenarios launched:  18
+  Scenarios completed: 142
+  Requests completed:  142
+  Mean response/sec: 1.8
+  Response time (msec):
+    min: 59933.6
+    max: 75574.5
+    median: 59936.2
+    p95: 75498.9
+    p99: 75562.1
+  Codes:
+    504: 142
+  Errors:
+    ECONNRESET: 9
+
+Started phase 6 (Linear Ramp 3), duration: 30s @ 21:02:55(-0300) 2020-05-20
+Report @ 21:03:00(-0300) 2020-05-20
+Elapsed time: 2 minutes, 30 seconds
+  Scenarios launched:  77
+  Scenarios completed: 149
+  Requests completed:  149
+  Mean response/sec: 18.73
+  Response time (msec):
+    min: 59933.7
+    max: 59944.2
+    median: 59936
+    p95: 59938
+    p99: 59939.7
+  Codes:
+    504: 149
+
+Report @ 21:03:10(-0300) 2020-05-20
+Elapsed time: 2 minutes, 40 seconds
+  Scenarios launched:  227
+  Scenarios completed: 89
+  Requests completed:  89
+  Mean response/sec: 22.77
+  Response time (msec):
+    min: 59934
+    max: 59937.8
+    median: 59935.4
+    p95: 59937.2
+    p99: 59937.7
+  Codes:
+    504: 89
+
+Report @ 21:03:20(-0300) 2020-05-20
+Elapsed time: 2 minutes, 50 seconds
+  Scenarios launched:  271
+  Scenarios completed: 1
+  Requests completed:  1
+  Mean response/sec: 27.18
+  Response time (msec):
+    min: 59934.8
+    max: 59934.8
+    median: 59934.8
+    p95: 59934.8
+    p99: 59934.8
+  Codes:
+    504: 1
+  Errors:
+    ECONNRESET: 203
+
+Started phase 7 (Medium Plane), duration: 40s @ 21:03:26(-0300) 2020-05-20
+Report @ 21:03:30(-0300) 2020-05-20
+Elapsed time: 3 minutes, 0 seconds
+  Scenarios launched:  294
+  Scenarios completed: 9
+  Requests completed:  9
+  Mean response/sec: 29.49
+  Response time (msec):
+    min: 59934
+    max: 59936.3
+    median: 59935.5
+    p95: 59936.3
+    p99: 59936.3
+  Codes:
+    504: 9
+  Errors:
+    ECONNRESET: 284
+
+Report @ 21:03:40(-0300) 2020-05-20
+Elapsed time: 3 minutes, 10 seconds
+  Scenarios launched:  300
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: 30.09
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+  Errors:
+    ECONNRESET: 300
+
+Report @ 21:03:50(-0300) 2020-05-20
+Elapsed time: 3 minutes, 20 seconds
+  Scenarios launched:  300
+  Scenarios completed: 119
+  Requests completed:  119
+  Mean response/sec: 30.09
+  Response time (msec):
+    min: 60937.8
+    max: 91929
+    median: 91463.1
+    p95: 91890.2
+    p99: 91922.1
+  Codes:
+    504: 119
+  Errors:
+    ECONNRESET: 182
+
+Report @ 21:04:00(-0300) 2020-05-20
+Elapsed time: 3 minutes, 30 seconds
+  Scenarios launched:  300
+  Scenarios completed: 90
+  Requests completed:  90
+  Mean response/sec: 30.09
+  Response time (msec):
+    min: 59934.8
+    max: 91931.8
+    median: 59936.8
+    p95: 91743.1
+    p99: 91900.6
+  Codes:
+    504: 90
+  Errors:
+    ECONNRESET: 210
+
+Report @ 21:04:10(-0300) 2020-05-20
+Elapsed time: 3 minutes, 40 seconds
+  Scenarios launched:  178
+  Scenarios completed: 226
+  Requests completed:  226
+  Mean response/sec: 17.84
+  Response time (msec):
+    min: 59935.2
+    max: 59948.7
+    median: 59936.9
+    p95: 59938.4
+    p99: 59942.9
+  Codes:
+    504: 226
+  Errors:
+    ECONNRESET: 54
+
+Report @ 21:04:20(-0300) 2020-05-20
+Elapsed time: 3 minutes, 50 seconds
+  Scenarios launched:  0
+  Scenarios completed: 67
+  Requests completed:  67
+  Mean response/sec: NaN
+  Response time (msec):
+    min: 59934.3
+    max: 59944.1
+    median: 59935.7
+    p95: 59940.2
+    p99: 59944
+  Codes:
+    504: 67
+
+Report @ 21:04:30(-0300) 2020-05-20
+Elapsed time: 4 minutes, 0 seconds
+  Scenarios launched:  0
+  Scenarios completed: 9
+  Requests completed:  9
+  Mean response/sec: NaN
+  Response time (msec):
+    min: 59935.1
+    max: 59936.6
+    median: 59936
+    p95: 59936.6
+    p99: 59936.6
+  Codes:
+    504: 9
+
+Report @ 21:04:40(-0300) 2020-05-20
+Elapsed time: 4 minutes, 10 seconds
+  Scenarios launched:  0
+  Scenarios completed: 0
+  Requests completed:  0
+  Mean response/sec: NaN
+  Response time (msec):
+    min: NaN
+    max: NaN
+    median: NaN
+    p95: NaN
+    p99: NaN
+
+Report @ 21:04:50(-0300) 2020-05-20
+Elapsed time: 4 minutes, 20 seconds
+  Scenarios launched:  0
+  Scenarios completed: 119
+  Requests completed:  119
+  Mean response/sec: NaN
+  Response time (msec):
+    min: 59933.7
+    max: 67071.2
+    median: 63000.2
+    p95: 67060
+    p99: 67069
+  Codes:
+    504: 119
+
+Report @ 21:05:00(-0300) 2020-05-20
+Elapsed time: 4 minutes, 30 seconds
+  Scenarios launched:  0
+  Scenarios completed: 91
+  Requests completed:  91
+  Mean response/sec: NaN
+  Response time (msec):
+    min: 59933.5
+    max: 59938.7
+    median: 59935
+    p95: 59936.4
+    p99: 59938.2
+  Codes:
+    504: 91
+
+Report @ 21:05:06(-0300) 2020-05-20
+Elapsed time: 4 minutes, 36 seconds
+  Scenarios launched:  0
+  Scenarios completed: 123
+  Requests completed:  123
+  Mean response/sec: NaN
+  Response time (msec):
+    min: 59933.2
+    max: 59938.9
+    median: 59934.9
+    p95: 59937
+    p99: 59938.7
+  Codes:
+    504: 123
+
+All virtual users finished
+Summary report @ 21:05:06(-0300) 2020-05-20
+  Scenarios launched:  3370
+  Scenarios completed: 1569
+  Requests completed:  1569
+  Mean response/sec: 12.21
+  Response time (msec):
+    min: 523.9
+    max: 91931.8
+    median: 59935.9
+    p95: 75561.4
+    p99: 91837.1
+  Scenario counts:
+    Medio: 3370 (100%)
+  Codes:
+    200: 194
+    504: 1375
+  Errors:
+    ECONNRESET: 1801
+

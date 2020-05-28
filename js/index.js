@@ -1,9 +1,10 @@
 const express = require ('express')
-const app= express();
-const path= require('path'); 
+const app = express();
+const path = require('path'); 
 
-const PORT= 8080;
-const TIMEOUT= 500;
+const PORT = 8080;
+const TIMEOUT = 5000;
+const TIME_WAIT = 500;
 
 
 
@@ -26,7 +27,7 @@ app.get('/ping', (request, response)=> {
 });
 
 //se define la ruta Proxy
-//Duerme cierto tiempo y responde (lento y de procesamiento mínimo)
+//Duerme TIMEOUT (milisegundos) y responde (lento y de procesamiento mínimo)
 app.get('/timeout', (request, response)=>{
 
     setTimeout(function() {
@@ -43,12 +44,12 @@ app.get('/intensivo', (request, response)=>{
     for (;;) {
       let now = new Date();
   
-      if (now - start >= TIMEOUT) {
+      if (now - start >= TIME_WAIT) {
         break;
       }
     }
   
-    response.status(200).send(`Respuesta intensivo con timeout:${TIMEOUT/1000} segundos`);
+    response.status(200).send(`Respuesta intensivo con timeout:${TIME_WAIT} milisegundos`);
   
 })
 

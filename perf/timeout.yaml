@@ -14,7 +14,14 @@ config:
             host: localhost
             port: 8125
             prefix: "artillery-gunicorn"
-  
+      gunicorn_server_group:
+        target: 'http://localhost:5555/gunicorn_group'
+        plugins:
+          statsd:
+            host: localhost
+            port: 8125
+            prefix: "artillery-gunicorn-group"
+
     pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
   
     phases:

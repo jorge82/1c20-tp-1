@@ -29,6 +29,14 @@ services:
             - ./nginx_reverse_proxy.conf:/etc/nginx/conf.d/default.conf:ro
             - ./store/static/files:/static:ro   
 
+    mystery_service:
+        image: arqsoft/bbox:202001.1
+        volumes:
+            - ./mystery_service.properties:/opt/bbox/config.properties
+        ports:
+            - "9090:9090"
+            - "9091:9091"
+
     graphite:
         image: graphiteapp/graphite-statsd:1.1.5-12
         volumes:
