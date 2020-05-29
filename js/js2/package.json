@@ -1,0 +1,11 @@
+{
+  "name": "server_node_2_clusters",
+  "version": "1.0.0",
+  "description": "servidor node que corre en dos clusters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

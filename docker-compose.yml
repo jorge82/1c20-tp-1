@@ -1,15 +1,16 @@
 version: '3'
 
 services:
-    node_1:
+    node:
         build: ./js
         ports: 
             - "4000:8080"    #mapeo el puerto 8080 del contenedor al 4000 del host
 
-    gunicorn_1:
+    gunicorn:
         build: ./py
-        ports: 
-            - "4001:8000"    #mapeo el puerto 8000 del contenedor al 4001 del host
+        command: gunicorn --bind 0.0.0.0:8000 -w1 wsgi:app
+      #  ports: 
+          #  - "4001:8000"    #mapeo el puerto 8000 del contenedor al 4001 del host
 
     gunicorn_4:
         build: ./py
@@ -19,6 +20,17 @@ services:
     
     gunicorn_6:
         build: ./py
+
+    node_2_workers:
+        build: ./js/js2
+        ports: 
+            - "4003:8081"
+
+    gunicorn_2_worquers:
+        build: ./py
+        command: gunicorn --bind 0.0.0.0:8000 -w2 wsgi:app
+        ports: 
+            - "4002:8000"
         
     nginx:
         restart: always
